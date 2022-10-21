@@ -12,13 +12,13 @@ Our work now was Accepted by the Journal of Neural Engineering. If you want to c
 
 The signal pre-processing was to normalize and cut the EEG data into 30-s segments. For data enhancement, we used a contextual enhancement method to enhance the data by merging information from adjacent samplessegments. After that, the enhanced data were fed into the MRASleepNet model and different metrics were used to evaluate the performance of the model.
 
-![Overall](C:\Users\yurui\Desktop\opensource\fig\overall.png)
+![Overall](https://github.com/YuRui8879/MRASleepNet/blob/master/fig/overall.png)
 
 ### Data Enhancement
 
 We have augmented the data using the adjacent sleep states.
 
-![DataEnhancement](C:\Users\yurui\Desktop\opensource\fig\dataenhance.jpg)
+![DataEnhancement](https://github.com/YuRui8879/MRASleepNet/blob/master/fig/dataenhance.jpg)
 
 ### Model
 
@@ -30,13 +30,13 @@ The MRA module further abstracted the features and modeled the importance of the
 
 The gMLP module was used to extract temporal information from the EEG signals and model the temporal relationship of the features. 
 
-![Model](C:\Users\yurui\Desktop\opensource\fig\model.jpg)
+![Model](https://github.com/YuRui8879/MRASleepNet/blob/master/fig/model.jpg)
 
 ### Result
 
 Comparison of results with other models
 
-![Result](C:\Users\yurui\Desktop\opensource\fig\result.jpg)
+![Result](https://github.com/YuRui8879/MRASleepNet/blob/master/fig/result.jpg)
 
 ## Usage
 
