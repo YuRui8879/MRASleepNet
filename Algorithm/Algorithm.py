@@ -72,7 +72,7 @@ class Algorithm():
             end_time = time.time()
             self.log.log('- Epoch: {:d} - Train_loss: {:.5f} - Train_mean_acc: {:.5f} - Test_loss: {:.5f} - Test_mean_acc: {:.5f} - T_Time: {:.3f}'.format\
                 (epoch,train_metric.get_loss(),train_metric.get_accuracy(),test_metric.get_loss(),test_metric.get_accuracy(),end_time - start_time))
-            self.log.log('当前学习率：{:.10f}'.format(self.optimizer.state_dict()['param_groups'][0]['lr']))
+            self.log.log('Current learning rate: {:.10f}'.format(self.optimizer.state_dict()['param_groups'][0]['lr']))
             self.clr.step()
             train_metric.step()
             test_metric.step()

@@ -59,11 +59,21 @@ pip install -r requirements
 
 ### Convert data format
 
+**SleepEDF**
+
 By running
 ```python
 python prepare_physionet.py --data_dir . --output_dir .
 ```
 Convert edf format data in the database to mat format. **data_dir** is the path of the original data downloaded, **output_dir** is the path to save the mat file after conversion.
+
+**CAP**
+
+By running
+```python
+python CAP2mat.py --data_path . --label_path . --output_path . --select_channel Fp2-F4
+```
+Convert edf format data in the database to mat format. **data_path** is the path of the original data downloaded, **label_path** is the path of the original label downloaded, **output_path** is the path to save the mat file after conversion, **select_channel** is the selected lead.
 
 ### Data set partition
 
