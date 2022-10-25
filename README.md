@@ -57,6 +57,8 @@ Switch to this repository directory, download the required dependencies via pip
 pip install -r requirements
 ```
 
+The version of pytorch used in this project may give a warning when using maxpool. If you want to clear this warning, you can use a higher version of pytorch.
+
 ### Convert data format
 
 **SleepEDF**
