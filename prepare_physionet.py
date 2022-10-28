@@ -55,9 +55,6 @@ def main():
         shutil.rmtree(args.output_dir)
         os.makedirs(args.output_dir)
 
-    # Select channel
-    select_ch = args.select_ch
-
     # Read raw and annotation EDF files
     psg_fnames = glob.glob(os.path.join(args.data_dir, "*PSG.edf"))
     ann_fnames = glob.glob(os.path.join(args.data_dir, "*Hypnogram.edf"))
