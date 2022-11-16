@@ -4,7 +4,7 @@
 
 This repository provides the code for "MRASleepNet: A multi-resolution attention network for sleep stage classification using single-channel EEG"
 
-Our work now was Accepted by the Journal of Neural Engineering. If you want to cite this article, please use the Citation section (at the end of README).
+Our work now was Accepted by the Journal of Neural Engineering. If you want to cite this article, please see the Citation section (at the end of README).
 
 ## Method
 
@@ -53,7 +53,7 @@ You need to download the database locally, and Physionet offers different ways t
 
 Switch to this repository directory, download the required dependencies via pip
 
-```python
+```
 pip install -r requirements
 ```
 
@@ -64,7 +64,7 @@ The version of pytorch used in this project may give a warning when using maxpoo
 **SleepEDF**
 
 By running
-```python
+```
 python prepare_physionet.py --data_dir . --output_dir .
 ```
 Convert edf format data in the database to mat format. **data_dir** is the path of the original data downloaded, **output_dir** is the path to save the mat file after conversion.
@@ -72,7 +72,7 @@ Convert edf format data in the database to mat format. **data_dir** is the path 
 **CAP**
 
 By running
-```python
+```
 python CAP2mat.py --data_path . --label_path . --output_path . --select_channel Fp2-F4
 ```
 Convert edf format data in the database to mat format. **data_path** is the path of the original data downloaded, **label_path** is the path of the original label downloaded, **output_path** is the path to save the mat file after conversion, **select_channel** is the selected lead.
@@ -80,13 +80,13 @@ Convert edf format data in the database to mat format. **data_path** is the path
 ### Data set partition
 
 By running
-```python
+```
 python split_data.py --data_path . --output_path .
 ```
 partitioning the data set, Where **data_path** is the generated mat file directory and **output_path** is the output dataset divided txt file directory.
 
 split_data.py also offers the following optional parameters
-```python
+```
 --seed          Random seed
 --file_type     choice = ['SC','ST','ALL'], Select whether to use SC files, ST files or all files
 --folds         The K for K-fold cross validation
@@ -96,13 +96,13 @@ split_data.py also offers the following optional parameters
 ### Train and Test
 
 Run
-```python
+```
 python main.py --log_save_path . --model_save_path . --split_data_file_path .
 ```
 for training and testing, where **log_save_path** is the path to save log file, **model_save_path** is the path to save trained model and **split_data_file_path** is the path to save txt file of dataset partition results.
 
 main.py provides the following optional parameters
-```python
+```
 --parallel        Whether to use multi-GPU training
 --batch_size      Batch size
 --learning_rate   Learning_rate
