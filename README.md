@@ -1,12 +1,12 @@
 # MRASleepNet
 
-## Cite
+## Description
 
 This repository provides the code for "MRASleepNet: A multi-resolution attention network for sleep stage classification using single-channel EEG"
 
-Our work now was Accepted by the Journal of Neural Engineering. If you want to cite this article, please use ""
+Our work now was Accepted by the Journal of Neural Engineering. If you want to cite this article, please use the Citation section (at the end of README).
 
-## Description
+## Method
 
 ### Overall
 
@@ -109,4 +109,18 @@ main.py provides the following optional parameters
 --epochs          Max iteration
 --cuda_device     If you do not use multi-GPU training, you need to specify the GPU
 -- reg_parameter  Parameter for L2 regularization. If set to 0, L2 regularization is not used
+```
+
+## Citation
+
+If you find this work or code is helpful in your research, please cite:
+
+```
+@article{10.1088/1741-2552/aca2de,
+	author={Yu, Rui and Zhou, Zhuhuang and Wu, Shuicai and Gao, Xiaorong and Bin, Guangyu},
+	title={MRASleepNet: A multi-resolution attention network for sleep stage classification using single-channel EEG},
+	journal={Journal of Neural Engineering},
+	url={http://iopscience.iop.org/article/10.1088/1741-2552/aca2de},
+	year={2022}
+}
 ```

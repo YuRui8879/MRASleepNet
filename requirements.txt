@@ -1,6 +1,6 @@
-matplotlib==3.4.2
-numpy==1.20.3
+matplotlib
+numpy
 torch==1.9.0+cu102
-scipy==1.6.3
-argparse==1.4.0
-mne==0.24.1
+scipy
+argparse
+mne
